@@ -1,16 +1,15 @@
 export default function Home() {
   return (
-    <main style={{fontFamily: 'system-ui, Arial', padding: 24}}>
-      <h1>EmpathIQ – Neuro Ally Demo</h1>
-      <p>🎧 This is a simple demo scaffold. If you can see this on Vercel, the pipeline works.</p>
-
-      <ul>
-        <li>Neuro Ally Path</li>
-        <li>Business / Sales Path</li>
-        <li>Project Builder</li>
+    <main style={{fontFamily:'system-ui, Arial', padding:24, maxWidth:960, margin:'0 auto'}}>
+      <h1>EmpathIQ — Demo Hub</h1>
+      <p>Choose a path to explore the clickable demo:</p>
+      <ul style={{lineHeight:'2'}}>
+        <li><a href="/neuro-ally">🧠 Neuro Ally (Conversational Flow + Stand Up mode)</a></li>
+        <li><a href="/business">💼 Business / Sales (Objection Reframer)</a></li>
+        <li><a href="/project">📂 Project Builder (Know who you’re presenting to)</a></li>
       </ul>
-
-      <p>Next step: I’ll wire in the real demo screens and flows.</p>
+      <hr style={{margin:'24px 0'}}/>
+      <p style={{opacity:.8}}>This is an MVP demo: no audio recorded, no data stored. The “what to say next” is simulated via a local API.</p>
     </main>
   );
 }
